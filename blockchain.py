@@ -66,15 +66,12 @@ class Blockchain() :
                 if length > max_length and self.valid_chain(chain) :
                     max_length = length
                     new_chain = chain
-                    
+
         if new_chain:
             self.chain = new_chain
             return True
         return False
-                
-                
-    
-    
+
 
     @staticmethod
     def hash(block):
